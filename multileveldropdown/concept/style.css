@@ -1,0 +1,50 @@
+* {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+nav {
+ display: flex;
+ padding: 25px 300px;
+ justify-content: space-between;
+}
+
+/* Showing submenu1 on click of menu item - snippet - begin */
+.menu-item {
+  border: 1px solid red;
+  position: relative;
+}
+
+.menu-item:hover {
+  height: 100px;
+}
+
+.submenu {
+  position: absolute;
+  text-align: center;
+  width: 88px;
+  padding: 10px 0px;
+  top: 40px;
+  border: 1px solid black;
+  display: none;
+  z-index: 10;
+  background-color: white;
+}
+
+.menu-item:hover > :nth-child(2) {
+  display: block;
+}
+
+.submenu-item {
+  position: relative;
+}
+
+.submenu-item:hover > :nth-child(2){
+  display: block;
+}
+
+.level2 {
+  top: 10px;
+  left: 88px;
+}
